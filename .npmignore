@@ -1,7 +1,0 @@
-./src
-./test
-.editorconfig
-.eslintrc
-.gitignore
-.travis.yml
-Gulpfile.js
