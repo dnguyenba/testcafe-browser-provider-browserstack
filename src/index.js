@@ -173,6 +173,7 @@ export default {
         capabilities.name            = `TestCafe test run ${id}`;
         capabilities.localIdentifier = connector.connectorInstance.localIdentifierFlag;
         capabilities.local           = true;
+        capabilities.chromeOptions   = { args: ['--autoplay-policy=no-user-gesture-required'] };
 
         await this.backend.openBrowser(id, pageUrl, capabilities);
 
